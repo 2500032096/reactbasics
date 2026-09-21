@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr 50px;
+}
+
+header {                                   
+    grid-column: 1 / 3;
+    padding: 10px;
+    background: #3888dd;
+    color: white;
+}
+
+aside {
+    padding: 20px;
+    background: #eee;
+}
+
+main {
+    padding: 5px;
+}
+
+footer {                                 
+    grid-column: 1 / 3;
+    padding: 15px;
+    text-align: center;
+    background: #3888dd;
+    color: white;
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+}
